@@ -18,6 +18,9 @@ $('#Login').submit(function (e) {
   var email = $('input[name="login"]').val();
   var password = $('input[name="pwd"]').val();
 
+   console.log(email);
+   console.log(password);
+
   firebase
     .auth()
     .signInWithEmailAndPassword(email, password)
