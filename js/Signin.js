@@ -1,12 +1,12 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDZIAVnBvB-GHlaDDO2GbOFjQhVvleb344",
-  authDomain: "database2023test.firebaseapp.com",
-  projectId: "database2023test",
-  storageBucket: "database2023test.appspot.com",
-  messagingSenderId: "352598568614",
-  appId: "1:352598568614:web:b1acd2e65514f8050f8e67",
-  measurementId: "G-6EF9ZJX352"
-}; 
+  apiKey: "AIzaSyDh7XeTWyEZnULNde-wQAHi0YYxFNntXhQ",
+  authDomain: "database2023-9510d.firebaseapp.com",
+  projectId: "database2023-9510d",
+  storageBucket: "database2023-9510d.appspot.com",
+  messagingSenderId: "414589827395",
+  appId: "1:414589827395:web:5ccfe3d7b039fd6c8397f6",
+  measurementId: "G-4LCJ70N7GV"
+};
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -29,11 +29,11 @@ $('#Login').submit(function (e) {
 
       //user.updateProfile({ displayName: "Not sure" });
       if (user != null) {
-        name = user.displayName;
+        myname = user.displayName;
         email = user.email;
         photoUrl = user.photoURL;
         emailVerified = user.emailVerified;
-        console.log(name, email, emailVerified);
+        console.log(myname, email, emailVerified);
       }
     })
     .catch((error) => {
