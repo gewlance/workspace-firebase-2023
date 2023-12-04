@@ -40,7 +40,7 @@ $("#signup-form").submit(function(e) {
           "signupDate":date
         };
         
-        var db = firebase.firebase();
+        var db = firebase.firestore();
         db.collection("usertable").doc(user.displayName).set(userinformation).then(()=>{
 
           console.log("You are signed up");

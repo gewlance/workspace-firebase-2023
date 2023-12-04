@@ -38,4 +38,14 @@ $(".sampleSurvey input[type='submit']").click(function(e) {
 
 });
 
+//SIGN OUT CODE
+$("#signout").click(function(e) {
+  firebase.auth().signOut().then(()=>{
+    console.log("user sign out");
+    window.location.href = "index.html";
+  }).catch((error)=> {
+    console.log(error.message);
+  });
+});
+
 // update the result in table
